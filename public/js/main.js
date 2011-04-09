@@ -39,10 +39,6 @@ var disqus_developer = 1; // developer mode is on
                     $('#sections ol li').removeClass('selected');
                     $this.addClass('selected');
                     $('#posts ol').isotope($.extend({}, isotopeOptions, {filter: filter}));
-                    $('body').removeClass();
-                    if(filter != '*') {
-                        $('body').addClass(filter.substring(1), 2000);
-                    }
                 });
             }
         },
