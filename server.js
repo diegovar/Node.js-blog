@@ -66,7 +66,7 @@ app.get('/posts/fancy/:topic/:name', function(req, res) {
         topic: req.params.topic,
         page: req.params.name
       },
-      layout : 'fancyposts_layout.html'
+      layout : 'fancyposts/layout'
     });
 });
 
@@ -77,7 +77,7 @@ app.get('/posts/:topic/:name', function(req, res) {
         topic: req.params.topic,
         page: req.params.name
       },
-      layout : req.params.topic + '_layout.html'
+      layout : 'posts/'+req.params.topic+'/layout'
     });
 });
 
