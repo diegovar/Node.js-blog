@@ -87,5 +87,5 @@ app.get('about', function(req,res){
 
 if (!module.parent) {
   app.listen(port);
-  console.log("Express server listening on port %d", app.address().port);
+  console.log("Express server happily listening on port %d", app.address().port);
 }
