@@ -6,7 +6,7 @@
 var mongoose = require('mongoose');
 var express =   require('express'),
     mustache =  require('mustache'),
-    stache =    require('../stache/lib/stache');
+    stache =    require('./stache');
 
 mongoose.connect('mongodb://localhost/blog');
 
