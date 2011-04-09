@@ -27,16 +27,17 @@ app.configure(function(){
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
   app.register("html", stache);
-  
   //repository.setup();
 });
 
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
+  port = 3000;
 });
 
 app.configure('production', function(){
   app.use(express.errorHandler()); 
+  port = 80;
 });
 
 // Routes
@@ -62,6 +63,6 @@ app.get('about', function(req,res){
 // Only listen on $ node app.js
 
 if (!module.parent) {
-  app.listen(3000);
+  app.listen(port);
   console.log("Express server listening on port %d", app.address().port);
 }
