@@ -1,0 +1,30 @@
+<p>I've been trying to create this blog engine by delving into Node.js,
+the incredibly hyped library that simplifies javascript I/O in the server,
+in conjunction with Express as a web server and Mustache as a templating language for my views.
+</p>
+<p>
+<strong><a href="http://nodejs.org/">Node.js</a></strong> provides evented I/O in an asynchronous way, leveraging javascript's functional nature. It's written on top of V8, Google's javascript
+engine, so it's ridiculously fast (or so I've heard).
+</p>
+<p>
+<strong><a href="http://expressjs.com/">Express</a></strong> is a web server written on top of Node.js that takes these advantages to allow a single thread to service a great number of requests per second, maintaining simplicity and
+modularity. It's quite stable and is completely pluggable via middleware.
+</p>
+<p>
+<strong><a href="http://mustache.github.com/">Mustache</a></strong> is a logic-less templating language. As its description implies, Mustache views have no logic, and so, are simpler to understand and to maintain.
+</p>
+<p>
+    One of the disadvantages of Mustache is that it doesn't provide any suppor for layouts or sections.
+    A layout is a view that has a single <cite>yield</cite> block which is later on filled by the child view.
+    I come from an ASP.NET MVC background, and as so, I've grown accustomed to Razor views and layouts.
+    Razor layouts also allow you to declare several sections inside a layout page that will be filled in by
+    child pages. This allows you to include a particular script for a specific view in the correct place, be it
+    at the end of the &lt;head&gt; or &lt;body&gt; tags.
+</p>
+<p>
+    Trying to come up with a solution to this, I found the <strong><a href="https://github.com/fat/stache">stache</a></strong> project, which aims at integrating Mustache into Express in
+    a nice and clean way, as well as providing support for layouts. If you're seeing the page all styled up, it means it worked :)
+    What this project doesn't allow is for a layout to have several section to be filled in.
+    There's a <a href="https://groups.google.com/forum/#!topic/express-js/z6vOUAP9IUM">discussion</a> in the express
+    groups about this issue, and hopefully a solution will appear for this.
+</p>

@@ -5,7 +5,7 @@ function loadTestData() {
     var post = new BlogPost();
     post.id = 0;
     post.title = "title";
-    post.thumbUrl: 
+    post.thumbUrl = "";
     post.save();
 };
 
