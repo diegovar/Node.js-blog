@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  
+  {{>head}}
+
+</head>
+
+<body data-area='{{area}}' data-topic='{{topic}}' data-page='{{page}}'>
+  
+  <div class="post_container programming">
+    <article class="post">
+        
+        <header>
+            
+            <h1>Using layouts with Mustache.js and Express in Node.js</h1>
+            <span class="huge_watermark">{</span>
+        </header>
+        
+        <div class="post_contents">
+    
+          {{{yield}}}
+          
+        </div>
+        
+        <div class="tags">
+            <ul class="clearfix">
+                <li>Node.js</li>
+                <li>Mustache.js</li>
+                <li>Express</li>
+                <li>Programming</li>
+            </ul>
+        </div>
+        
+        {{>disqusComments}}
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><!-- Yes, I'm lazy. I'll implement a sticky footer later-->
+        
+    </article>
+    
+  </div>
+
+  {{>typicalScripts}}
+
+  {{>extraScriptsPerPage}}
+
+  {{>endScripts}}
+
+</body>
+</html>
+
+
