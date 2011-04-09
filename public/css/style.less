@@ -183,7 +183,7 @@ a:hover { color: #036; }
  * Author: 
  */
 
-@main_area_width: 1024px;
+@main_area_width: 920px;
 
 html, body {
     height: 100%;
@@ -203,7 +203,7 @@ body.music #container > header {
 }
 
 #container .header_inner {
-	max-width: 1024px;
+	max-width: @main_area_width;
 	margin: 0 auto;
 	position: relative;
 }
@@ -219,7 +219,7 @@ body.music #container > header {
 }
 
 #main {
-	max-width: 1024px;
+	max-width: @main_area_width;
 	margin: 0 auto;
     background-color: #fff;
 }
@@ -386,7 +386,7 @@ body.music #container > header {
     color: #C5AF68;
     font-family: 'Liberation Mono' 'Helvetica';
     .post {
-        max-width: 1024px;
+        max-width: @main_area_width;
         margin: 0 auto;
         background-color: hsl(0,0%,8%);
         > header {
@@ -418,7 +418,7 @@ body.music #container > header {
                 position: absolute;
                 color: rgba(255,255,255,0.3);
                 top: -58px;
-                right: 93px;
+                right: 47px;
                 font-size: 120px;
                 -webkit-transform: rotate(90deg);
                 -moz-transform: rotate(90deg);
@@ -460,6 +460,11 @@ body.music #container > header {
             border-bottom: dashed 1px;
         }
     }
+}
+
+
+#disqus_thread {
+    margin: 5px;
 }
 
 

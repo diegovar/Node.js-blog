@@ -1,10 +1,15 @@
+//Global variables needed by Disqus
+var disqus_shortname = 'drambleon';
+var disqus_identifier = null;
+var disqus_url = null;
+var disqus_developer = 1; // developer mode is on
+
 (function() {
     
     var Util = {
         setupDisqus : function(pageId, pageUrl) {
-            var disqus_shortname = 'drambleon';
-            var disqus_identifier = pageId;
-            var disqus_url = pageUrl;
+            disqus_identifier = pageId;
+            disqus_url = pageUrl;
         
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {

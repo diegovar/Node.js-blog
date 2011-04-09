@@ -347,7 +347,7 @@ body.music #container > header {
   background-color: #45c804;
 }
 #container .header_inner {
-  max-width: 1024px;
+  max-width: 920px;
   margin: 0 auto;
   position: relative;
 }
@@ -361,7 +361,7 @@ body.music #container > header {
   width: 585px;
 }
 #main {
-  max-width: 1024px;
+  max-width: 920px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -405,7 +405,7 @@ body.music #container > header {
 }
 /* posts */
 #posts {
-  padding: 0 72px;
+  padding: 0 20px;
 }
 #posts ol li {
   list-style-type: none;
@@ -488,7 +488,7 @@ body.music #container > header {
   font-family: 'Liberation Mono' 'Helvetica';
 }
 .post_container.programming .post {
-  max-width: 1024px;
+  max-width: 920px;
   margin: 0 auto;
   background-color: #141414;
 }
@@ -518,7 +518,7 @@ body.music #container > header {
   position: absolute;
   color: rgba(255, 255, 255, 0.3);
   top: -58px;
-  right: 93px;
+  right: 47px;
   font-size: 120px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -557,6 +557,9 @@ body.music #container > header {
 }
 .post_container.programming a:hover {
   border-bottom: dashed 1px;
+}
+#disqus_thread {
+  margin: 5px;
 }
 /**** Isotope css transitions ****/
 .isotope, .isotope .isotope-item {
